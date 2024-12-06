@@ -1,0 +1,70 @@
+[gd_scene load_steps=12 format=3 uid="uid://nr6gchiojs0l"]
+
+[ext_resource type="Texture2D" uid="uid://nvtrcgcru5nq" path="res://Assets/sprites/sprite-1.png" id="1_8sknb"]
+[ext_resource type="Script" path="res://Scripts/cano_1.gd" id="2_ifkwh"]
+[ext_resource type="Texture2D" uid="uid://balsuqqljohud" path="res://Assets/sprites/sprite-2.png" id="3_nsaiu"]
+[ext_resource type="Script" path="res://Scripts/cano_2.gd" id="4_jmtgy"]
+[ext_resource type="Texture2D" uid="uid://126dr54tnf01" path="res://Assets/sprites/sprite-3.png" id="5_r67rk"]
+[ext_resource type="Script" path="res://Scripts/cano_3.gd" id="6_hguii"]
+[ext_resource type="Texture2D" uid="uid://b3mar8x4wamlm" path="res://Assets/sprites/sprite-4.png" id="7_2ck5h"]
+[ext_resource type="Texture2D" uid="uid://bq2ygaun6jk0n" path="res://Assets/sprites/sprite-6.png" id="9_jdkhx"]
+[ext_resource type="Texture2D" uid="uid://pco2373jjtr5" path="res://Assets/sprites/sprite (8).png" id="10_fky36"]
+[ext_resource type="Script" path="res://Scripts/cano_5.gd" id="10_s5de0"]
+[ext_resource type="Texture2D" uid="uid://dmkddvnf3ial6" path="res://Assets/sprites/Agua.png" id="11_0e1xl"]
+
+[node name="Canos" type="Node2D"]
+position = Vector2(52, -134)
+
+[node name="Cano-7" type="Sprite2D" parent="."]
+z_index = -3
+position = Vector2(152, 682)
+texture = ExtResource("1_8sknb")
+script = ExtResource("2_ifkwh")
+
+[node name="Cano-1" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(398, 415)
+texture = ExtResource("1_8sknb")
+script = ExtResource("2_ifkwh")
+
+[node name="Cano-2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(382, 476)
+texture = ExtResource("3_nsaiu")
+script = ExtResource("4_jmtgy")
+
+[node name="Cano-3" type="Sprite2D" parent="."]
+position = Vector2(289, 685)
+rotation = -4.71239
+texture = ExtResource("5_r67rk")
+script = ExtResource("6_hguii")
+
+[node name="Cano-4" type="Sprite2D" parent="."]
+position = Vector2(385, 672)
+scale = Vector2(1.15887, 1)
+texture = ExtResource("7_2ck5h")
+
+[node name="Cano-5" type="Sprite2D" parent="."]
+position = Vector2(382, 568)
+rotation = -1.5708
+texture = ExtResource("9_jdkhx")
+script = ExtResource("10_s5de0")
+
+[node name="Cano-6" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(211, 674)
+rotation = 1.5708
+texture = ExtResource("3_nsaiu")
+script = ExtResource("2_ifkwh")
+
+[node name="Torneira" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(483.25, 393)
+scale = Vector2(0.455017, 0.3875)
+texture = ExtResource("10_fky36")
+
+[node name="Agua" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(163.5, 777.625)
+scale = Vector2(1.00481, 4.01875)
+texture = ExtResource("11_0e1xl")

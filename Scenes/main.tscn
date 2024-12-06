@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://c5gb8ex0b5iwj"]
+
+[ext_resource type="PackedScene" uid="uid://nr6gchiojs0l" path="res://Scenes/Canos.tscn" id="1_tjxvl"]
+[ext_resource type="Texture2D" uid="uid://1mgmawrjiwky" path="res://Assets/sprites/tree.png" id="2_bwn07"]
+[ext_resource type="Texture2D" uid="uid://cgfa1kxuddxgr" path="res://Assets/sprites/5891125b-1868-4a38-bfca-800fad7e840c.png" id="3_qwvu7"]
+[ext_resource type="Texture2D" uid="uid://c6j55mno5wa56" path="res://Assets/sprites/696.jpg" id="4_5des2"]
+[ext_resource type="Texture2D" uid="uid://df8gfjg5rpdln" path="res://Assets/sprites/Nuvem-1.png" id="5_d14h0"]
+[ext_resource type="Texture2D" uid="uid://di6qnm31wpl5y" path="res://Assets/sprites/Grama-3.png" id="5_utoqq"]
+[ext_resource type="Texture2D" uid="uid://boeryak5l1ndd" path="res://Assets/sprites/Nuvem-2.png" id="6_0x3el"]
+[ext_resource type="Texture2D" uid="uid://bdk02t2ay0jo6" path="res://Assets/sprites/Nuvem-3.png" id="7_e31qb"]
+[ext_resource type="Texture2D" uid="uid://b6wcknvqjdguw" path="res://Assets/sprites/um-modelo-de-adesivo-com-o-sol-em-estilo-cartoon-isolado_1308-65480-removebg-preview.png" id="8_k7tx6"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(137, 176)
+
+[node name="Canos" parent="." instance=ExtResource("1_tjxvl")]
+position = Vector2(106, -199)
+
+[node name="Terra" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(436, 529)
+scale = Vector2(1.06, 0.429935)
+texture = ExtResource("4_5des2")
+
+[node name="Grama" type="Sprite2D" parent="Terra"]
+position = Vector2(-2.59797, -607.877)
+scale = Vector2(2.68514, 0.277991)
+texture = ExtResource("5_utoqq")
+
+[node name="Planta" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(737, 161)
+scale = Vector2(0.708, 0.706)
+texture = ExtResource("2_bwn07")
+
+[node name="Raiz" type="Sprite2D" parent="Planta"]
+z_index = -1
+position = Vector2(87.1213, 230.924)
+rotation = -0.762709
+scale = Vector2(0.656259, 0.933874)
+texture = ExtResource("3_qwvu7")
+
+[node name="Raiz-2" type="Sprite2D" parent="Planta"]
+z_index = -1
+position = Vector2(5.68184, 248.996)
+rotation = 0.959931
+scale = Vector2(0.856382, 0.927226)
+skew = -0.0113121
+texture = ExtResource("3_qwvu7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -7
+offset_left = -196.0
+offset_top = -177.0
+offset_right = 1062.0
+offset_bottom = 723.0
+color = Color(0.0431373, 0.27451, 1, 1)
+
+[node name="Nuvem-1" type="Sprite2D" parent="."]
+position = Vector2(-8, -3)
+texture = ExtResource("5_d14h0")
+
+[node name="Nuvem-2" type="Sprite2D" parent="."]
+position = Vector2(225, -93)
+texture = ExtResource("6_0x3el")
+
+[node name="Nuvem-3" type="Sprite2D" parent="."]
+position = Vector2(475, -16)
+texture = ExtResource("7_e31qb")
+
+[node name="Nuvem-4" type="Sprite2D" parent="."]
+position = Vector2(-18, -127)
+texture = ExtResource("5_d14h0")
+
+[node name="Nuvem-5" type="Sprite2D" parent="."]
+position = Vector2(625, -124)
+texture = ExtResource("7_e31qb")
+
+[node name="Um-modelo-de-adesivo-com-o-sol-em-estilo-cartoon-isolado1308-65480-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(1021, -156)
+scale = Vector2(0.309063, 0.289293)
+texture = ExtResource("8_k7tx6")
